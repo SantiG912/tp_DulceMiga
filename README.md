@@ -1,0 +1,101 @@
+# Examen Práctico – Programación 3
+
+**Empresa:** DulceMiga — Pastelería Artesanal
+
+## Descripción general
+
+DulceMiga solicita tu ayuda para maquetar la primera versión de su sitio web, tu deber será diseñar y estructurar las páginas utilizando todos tus conocimientos en **HTML semántico** y **CSS** (maquetación, responsive, animaciones y buenas prácticas). **No se permite** el uso de frameworks CSS (Bootstrap, Tailwind, etc.) ni librerías JS externas. Solo **HTML + CSS** puros.
+
+## ‼️ NO SE PUEDE USAR JAVASCRIPT 👀
+
+---
+
+## Requerimientos obligatorios
+
+### 1) Páginas (mínimo 4)
+
+Crea al menos las siguientes páginas HTML interconectadas mediante navegación:
+
+- `index.html` (Inicio)
+
+  - Debe mostrar **cards** con los productos/servicios destacados de la pastelería (ej. tortas, facturas, tartas, catering). Cada card debe tener imagen, título, breve descripción y un enlace al detalle.
+
+- `servicios.html` (Servicios / Productos)
+
+  - Listado de todos los productos/servicios con su **descripción detallada** y **precio**.
+
+- `equipo.html` (Equipo de trabajo)
+
+  - Presentación del equipo (nombre, rol breve, foto o avatar, breve bio). Utiliza un diseño tipo cards.
+
+- `contacto.html`
+
+  - Formulario con campos: nombre, email, teléfono (opcional), asunto y mensaje. El formulario **no tiene que enviar datos** a un servidor, pero debe incluir validación HTML5 (`required`, `type="email"`, etc.).
+
+> Puedes agregar páginas extras ( galería, tienda) como opcional.
+
+### 2) HTML semántico y accesibilidad
+
+- Usa etiquetas semánticas (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `figure`, `figcaption`, `h1..h6`, etc.).
+- Todos los `img` deben tener `alt` descriptivo.
+- Formulario accesible: etiquetas `label` vinculadas a inputs por `for`/`id`.
+- Asegura contraste suficiente en los textos y tamaños legibles (puedes usar `rem`/`em` para tipografías).
+
+### 3) Diseño y CSS
+
+- Estilo **moderno y atractivo**: tipografía cuidada, espaciados, uso de variables CSS (`:root`) para paleta y tipografías.
+- Incluye **animaciones y transiciones** (por ejemplo: hover en botones, efecto de aparición de cards al hacer scroll o al cargar la página — usando `@keyframes` y/o `transition`).
+- Implementa un **layout responsive**: mobile-first (recomendado), con breakpoints para tablet y desktop.
+- Debe verse correctamente en móvil, tablet y desktop: el menú debe adaptarse (puede ser un menú hamburguesa solo con CSS si lo deseas).
+
+### 4) Navegación y estructura global
+
+- `header` con `nav` presente en todas las páginas y enlaces funcionales entre páginas.
+- `footer` en todas las páginas con: dirección ficticia, teléfono, email de la empresa y enlaces a redes (solo íconos/links ficticios).
+
+### 5) Restricciones técnicas
+
+- Solo HTML y CSS. **No JavaScript** obligatorio para el funcionamiento básico.
+- No usar frameworks externos de CSS ni resets automáticos (puedes incluir un pequeño reset propio si lo deseas).
+
+---
+
+## Pistas y recomendaciones (no obligatorias)
+
+- Usa `flexbox` para los layouts.
+- Define variables CSS en `:root` para colores y tipografías.
+- Para animaciones puedes usar animaciones CSS `@keyframes`, `transition` y `:hover` para efectos.
+- Asegúrate de probar la web con herramientas de inspección en modo responsive.
+
+---
+
+## Entregable
+
+- Link del repositorio GitHub (público)
+- link del deploy en Netlify, Vercel o similar (opcional)
+
+```
+/dulcemiga-project/
+  ├─ index.html
+  ├─ pages/
+  │   └─ servicios.html
+  │   └─ equipo.html
+  │   └─ contacto.html
+  ├─ css/
+  │   └─ styles.css
+  ├─ img/
+  │   └─ (imagenes utilizadas: productos, equipo, logo)
+
+```
+
+- El archivo `index.html` debe abrir la web y permitir navegar entre las páginas sin errores.
+- Nombres de archivos y carpetas en **minúsculas** y sin espacios.
+
+---
+
+## Opcionales / Bonus (extra puntos)
+
+- Implementar un menú móvil tipo hamburguesa con animación y transiciones suaves.
+- Crear una página extra (`galeria.html`) con una grid de imágenes y modal ligero (solo CSS si se puede).
+
+---

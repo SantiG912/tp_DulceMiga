@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fuente);
+}
+body{
+    background-color: var(--fondo-body);
+    color: var(--color-fuente);
+    line-height: 1.5;
+}
