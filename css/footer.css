@@ -1,0 +1,41 @@
+footer.foot__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo-navbar);
+    color: var(--color-blanco);
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+.foot__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+.foot__item {
+    position: relative;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+.foot__icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+    filter: invert(1) drop-shadow(0 0 0.3rem #f3f3f34b);
+}
+.foot__title {
+    font-size: 1.2rem;
+    color: var(--color-blanco);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.foot__text {
+    font-size: 1rem;
+    color: var(--color-blanco);
+}

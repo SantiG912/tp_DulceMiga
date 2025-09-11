@@ -10,3 +10,11 @@ body{
     color: var(--color-fuente);
     line-height: 1.5;
 }
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

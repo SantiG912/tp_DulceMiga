@@ -1,0 +1,25 @@
+.btn__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: var(--color-terciario);
+    color: var(--color-blanco);
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 999px;
+}
+.btn:hover{
+    background-color: var(--terciario-hover);
+    transition: all 0.3s ease;
+    color: var(--color-blanco);
+}
+.btn:active{
+    background-color: var(--terciario-active);
+    transition: all 0.1s ease;
+    color: var(--color-blanco);
+}
