@@ -6,15 +6,12 @@
     font-family: var(--fuente);
 }
 body{
-    background-color: var(--fondo-body);
+    background-color: var(--color-blanco);
     color: var(--color-fuente);
     line-height: 1.5;
 }
 main{
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

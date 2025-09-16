@@ -5,6 +5,7 @@
     bottom: 0;
 }
 .btn{
+    border: none;
     background-color: var(--color-terciario);
     color: var(--color-blanco);
     padding: 8px 22px;

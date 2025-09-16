@@ -3,16 +3,32 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    top: 10px;
+    margin: 2rem;
+}
+.card__header{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.card__header h2{
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--color-fuente);
 }
 .card{
     width: 300px;
     height: auto;
-    border: 1px solid var(--color-secundario);
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: var(--fondo-body);
+}
+.card::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--color-secundario), var(--color-terciario));
 }
 .card img{
     width: 100%;
@@ -25,6 +41,9 @@
 }
 .card__content{
     padding: 1rem;
+}
+.card__content.center{
+    text-align: center;
 }
 .card__highlight{
     display: inline-block;
@@ -42,8 +61,197 @@
     color: var(--color-terciario);
     font-weight: 400;
 }
+.card__title.price{
+    color: var(--color-fuente);
+    font-size: 1.2rem;
+    margin-top: 0;
+    font-weight: 400;
+    font-style: italic;
+}
 .card__text{
+    width: auto;
+    height: 50px;
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+}
+
+/*CARDS PRODUCTOS*/
+
+.product__card{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 47%;
+    height: auto;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+.product__card:hover{
+    transform: translateY(-5px);
+}
+.product__card::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--color-secundario), var(--color-terciario));
+}
+.product__card img{
+    float: left;
+    width: 243px;
+    height: 243px;
+    object-fit: cover;
+}
+.product__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    float: left;
+    height: 243px;
+    width: auto; 
+    padding: 1rem;
+    gap: 8px;
+    flex: 1;
+}
+.product__title{
+    position: relative;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+    color: var(--color-terciario);
+    font-weight: 500;
+}
+.product__title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--color-terciario);
+    bottom: -5px;
+    left: 0;
+}
+.product__text{
+    width: 100%;
+    height: auto;
+    margin: 0.3rem auto;
+}
+.product__text p{
+    color: var(--color-fuente);
+    font-style: italic;
+}
+.product__price{
+    width: auto;
+    height: auto;
+    position: relative;
+    color: var(--color-terciario);
+}
+.product__price h3{
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*CARDS EQUIPO*/
+.team__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin: 1rem 0;
+    overflow: hidden;
+    width: 220px;
+    height: 300px;
+    border-radius: 55px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.team__card::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, var(--color-terciario),  var(--terciario-active));
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.team__card:hover{
+    width: 230px;
+    height: 310px;
+    color: var(--color-blanco);
+}
+.team__card:hover .team__badge{
+    background: var(--color-terciario);
+    color: var(--color-blanco);
+    border: 1px solid var(--terciario-hover);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+.team__card:hover img{
+    border: 1px solid var(--terciario-hover);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+.team__card:hover::before{
+    width: 100%;
+}
+.team__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.team__content img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+.team__badge{
+    width: 80%;
+    height: auto;
+    background: var(--color-terciario);
+    border-radius: 999px;
+    text-align: center;
+    color: var(--color-blanco);
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.team__title{
+    font-weight: 400;
+    font-style: italic;
+}
+/*MEDIA QUERYS*/
+@media(max-width: 768px) {
+    .card__header h2{
+        font-size: 1.8rem;
+    }
+    .card__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+        margin: 0;
+    }
+}
+@media(max-width: 1300px){
+    .product__card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .product__card img{
+        width: 100%;
+        height: 200px;
+    }
 }

@@ -10,25 +10,35 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar__inner">
-                <div class="navbar__brand">
+            <section class="navbar__inner">
+                <section class="navbar__brand">
                     <img 
                     src="./img/iconos/icon_dulcemiga.png" 
                     alt="Logo Dulce Miga"
                     >
                     <h1><a href="">Dulce Miga</a></h1>
-                </div>
+                </section>
                 <ul class="navbar__links">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="./pages/servicios/index.html">Servicios</a></li>
+                    <li><a href="./pages/productos/index.html">Productos</a></li>
                     <li><a href="./pages/equipo/index.html">Equipo</a></li>
                     <li><a href="./pages/contacto/index.html">Contacto</a></li>
                 </ul>
-            </div>
+            </section>
         </nav>
     </header>
     <main>
+        <section class="hero__container">
+            <section class="hero__content">
+                <h2 class="hero__title">Bienvenidos a Dulce Miga</h2>
+                <p class="hero__text">Tu pastelería de confianza en el corazón de la ciudad</p>
+            </section>
+        </section>
         <section class="card__container">
+            <section class="card__header">
+                <h2>Productos destacados</h2>
+            </section>
             <div class="card">
                 <img 
                 src="./img/servicios-productos/catering.jpg" 
@@ -38,7 +48,7 @@
                     <span class="card__highlight">
                         Destacado!
                     </span><br>
-                    <h3 class="card__title">Catering</h3>
+                    <h3 class="card__title">Servicios de Catering</h3>
                     <section class="card__text">
                         <p>Llevamos el sabor de nuestra panadería a tu evento</p>
                     </section>
@@ -49,14 +59,14 @@
             </div>
             <div class="card">
                 <img 
-                src="./img/servicios-productos/factura-merienda.jpg" 
+                src="./img/servicios-productos/facturas.jpg" 
                 alt="Producto destacado"
                 />
                 <div class="card__content">
                     <span class="card__highlight">
                         Destacado!
                     </span><br>
-                    <h3 class="card__title">Facturas</h3>
+                    <h3 class="card__title">Productos de panadería</h3>
                     <section class="card__text">
                         <p>Las mejores facturas de la ciudad</p>
                     </section>
@@ -75,7 +85,7 @@
                         Destacado!
                     </span><br>
                     <h3 class="card__title">Repostería</h3>
-                    <section>
+                    <section class="card__text">
                         <p>Encarganos los pasteles para tus eventos</p>
                     </section>
                     <div class="btn__container">
@@ -89,13 +99,21 @@
         <section class="foot__section">
             <section class="foot__item">
                 <span class="foot__icon">
+                    <img 
+                    src="./img/iconos/icon_dulcemiga.png" 
+                    alt="Logo Dulce Miga"
+                    >
+                </span>
+            </section>
+            <section class="foot__item">
+                <span class="foot__icon">
                     <img
                     src="./img/iconos/ubication.png"
                     alt="Ícono"
                     />
                 </span>
                 <h3 class="foot__title">Ubicación</h3>
-                <p class="foot__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="foot__text">Calle Imaginaria 123.</p>
             </section>
             <section class="foot__item">
                 <span class="foot__icon">
@@ -105,7 +123,7 @@
                     />
                 </span>
                 <h3 class="foot__title">Horarios</h3>
-                <p class="foot__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="foot__text">Lunes a viernes, 8.00 am a 8.00 pm. <br> Sábados, 9.00 am a 4.00 pm</p>
             </section>
             <section class="foot__item">
                 <span class="foot__icon">
@@ -115,7 +133,20 @@
                     />
                 </span>
                 <h3 class="foot__title">Contacto</h3>
-                <p class="foot__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="foot__text">Teléfono: +54 3364091218. <br> Correo: dulcemiga@gmail.com</p>
+            </section><section class="foot__item">
+                <span class="foot__icon">
+                    <img
+                    src="./img/iconos/social_icon.png"
+                    alt="Ícono"
+                    />
+                </span>
+                <h3 class="foot__title">Redes</h3>
+                <span class="foot__icon social">
+                    <a href="#"><img src="./img/iconos/fb_icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="./img/iconos/ig_icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="./img/iconos/tw_icon.png" alt="Twitter"></a>
+                </span>
             </section>
         </section>
     </footer>
