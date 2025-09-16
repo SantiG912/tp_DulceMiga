@@ -164,12 +164,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: row;
     position: relative;
     margin: 1rem 0;
     overflow: hidden;
-    width: 220px;
-    height: 300px;
+    width: 250px;
+    height: 500px;
     border-radius: 55px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -186,8 +187,8 @@
     z-index: -1;
 }
 .team__card:hover{
-    width: 230px;
-    height: 310px;
+    width: 260px;
+    height: 510px;
     color: var(--color-blanco);
 }
 .team__card:hover .team__badge{
@@ -229,6 +230,13 @@
 .team__title{
     font-weight: 400;
     font-style: italic;
+}
+.team__text{
+    margin: auto;
+    padding: 0.9rem;
+    height: 120px;
+    font-weight: lighter;
+    font-size: 1.1rem;
 }
 /*MEDIA QUERYS*/
 @media(max-width: 768px) {

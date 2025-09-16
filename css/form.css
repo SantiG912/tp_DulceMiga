@@ -1,0 +1,12 @@
+.form__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.form__inner{
+    margin: 2rem 0;
+}
+.contact__form{
+    padding: 3rem 0;
+}
