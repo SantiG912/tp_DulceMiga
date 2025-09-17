@@ -36,27 +36,37 @@
             </section>
         </section>
         <section class="form__container">
-            <section class="form__inner">
-                <form action="" method="get" class="contact__form">
-                    <section class="contact__info">
-                        <label for="nombre">Nombre:</label>
+            <form action="#">
+                <section class="form__inner">
+                    <section class="form__input">
                         <input type="text" id="nombre" name="nombre" required>
-                        <label for="apellido">Apellido:</label>
+                        <label for="nombre">Nombre</label>
+                    </section>
+                    <section class="form__input">
                         <input type="text" id="apellido" name="apellido" required>
-                        <label for="telefono">Teléfono:</label>
+                        <label for="apellido">Apellido</label>
+                    </section>
+                </section>
+                <section class="form__inner">
+                    <section class="form__input">
                         <input type="text" id="telefono" name="telefono" required>
-                        <label for="email">Correo (opcional):</label>
-                        <input type="text" id="email" name="email">
+                        <label for="telefono">Teléfono</label>
                     </section>
-                    <section class="form__text">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" name="asunto" required>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea></textarea>
+                    <section class="form__input">
+                        <input type="text" id="correo" name="correo">
+                        <label for="correo">Correo (opcional)</label>
+                    </section> 
+                </section>
+                <section class="form__inner">
+                    <section class="form__input textarea">
+                        <textarea name="mensaje" id="mensaje" rows="8" cols="80"></textarea>
+                        <label for="mensaje">Dejanos tu mensaje</label>
+                        <section class="btn__container">
+                            <button type="submit" class="btn">Enviar</button>
+                        </section>
                     </section>
-                </form>
-            </section>
-            
+                </section>
+            </form>
         </section>
     </main>
     <footer class="foot__container">
